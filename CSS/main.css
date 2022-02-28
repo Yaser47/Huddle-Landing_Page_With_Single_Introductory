@@ -20,21 +20,6 @@ body {
 	padding-left: 40px;
 	padding-right: 40px;
 }
-@media (min-width: 768px) {
-	.container {
-		width: 750px;
-	}
-}
-@media (min-width: 992px) {
-	.container {
-		width: 970px;
-	}
-}
-@media (min-width: 1200px) {
-	.container {
-		width: 1170px;
-	}
-}
 /* Start Main  */
 main {
 	min-height: 100vh;
@@ -45,6 +30,8 @@ main {
 @media (min-width: 992px) {
 	main {
 		background-image: url("../images/bg-desktop.svg");
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 }
 @media (max-width: 991px) {
@@ -61,7 +48,7 @@ header {
 }
 .info {
 	display: flex;
-	gap: 50px;
+	gap: 60px;
 }
 @media (max-width: 991px) {
 	.info {
@@ -89,12 +76,21 @@ header {
 }
 .text > h2 {
 	color: white;
-	font-size: 2em;
+	font-size: 2.9em;
 	margin-bottom: 20px;
 }
 .text > p {
 	color: white;
 	line-height: 1.6;
+	font-size: 1.25em;
+}
+@media (max-width: 991px) {
+	.text > p {
+		font-size: 1.04em;
+	}
+	.text > h2 {
+		font-size: 1.8em;
+	}
 }
 .text > a {
 	display: block;
